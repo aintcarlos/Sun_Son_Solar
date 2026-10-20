@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f8f8;
+    color: #263238;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+    background: #153F38;
+}
+
+.brand {
+    color: #FFFFFF !important;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logout-btn {
+    padding: 11px 24px;
+    border-radius: 30px;
+    background: #79C9C5;
+    color: #183638;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background: #62B7B3;
+}
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 24px;
+}
+
+.dashboard-container h1 {
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    margin-bottom: 30px;
+    color: #667575;
+    line-height: 1.6;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.dashboard-card {
+    padding: 26px;
+    background: #FFFFFF;
+    border: 1px solid #DCE7E7;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.dashboard-card p {
+    color: #435852;
+    font-size: 15px;
+    line-height: 1.7;
+}
+@media (max-width: 650px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header {
+        padding: 18px 5%;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+
+    .dashboard-container {
+        margin-top: 30px;
+    }
+}
+
+.dashboard-header .brand {
+    color: #FFFFFF !important;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.dashboard-header a.dashboard-brand {
+    color: #FFFFFF !important;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 650px) {
+    .dashboard-header a.dashboard-brand {
+        font-size: 18px;
+    }
+}
+
+.dashboard-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 11px 20px;
+    background: #153F38;
+    color: #FFFFFF;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-link:hover {
+    background: #20574D;
+    color: #FFFFFF;
+}

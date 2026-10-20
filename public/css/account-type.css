@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+    background: #f5f8f8;
+    color: #263238;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #263238;
+}
+
+.subtitle {
+    margin-bottom: 35px;
+    color: #667575;
+    line-height: 1.6;
+}
+
+.account-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.account-card {
+    padding: 30px 24px;
+    background: white;
+    border: 1px solid #dce7e7;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.account-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.account-card h2 {
+    margin-bottom: 12px;
+}
+
+.account-card p {
+    min-height: 70px;
+    color: #667575;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #79C9C5;
+    color: #183638;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #62b7b3;
+}
+
+.employee-note {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 28px;
+    color: #385b5a;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .account-options {
+        grid-template-columns: 1fr;
+    }
+
+    .account-card p {
+        min-height: auto;
+    }
+}
