@@ -3,7 +3,7 @@
 **Team:** TRIPPLE S  
 **Framework:** CodeIgniter 4  
 **Language:** PHP 8.2+  
-**Database:** MySQL / MariaDB  
+**Database:** MySQL
 **Local development environment:** XAMPP
 
 ## Project Overview
